@@ -49,7 +49,6 @@ if (btnLogout) {
     e.preventDefault();
     localStorage.removeItem("loggedInEmail");
     localStorage.removeItem("loggedInPassword");
-
     goToPage();
   });
 }
@@ -101,8 +100,8 @@ userName.addEventListener("focus", function () {
 
 function displayrequred() {
   var succes = document.getElementById("succes");
-  succes.classList.replace("d-block", "d-none");
   var required = document.getElementById("required");
+  succes.classList.replace("d-block", "d-none");
   required.classList.replace("d-block", "d-none");
 }
 
