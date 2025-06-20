@@ -1,0 +1,89 @@
+/***** Global Styles *****/
+body {
+  font-family: "Montserrat", sans-serif;
+background-color: #24353f;;
+
+}
+/***** End Global Styles *****/
+
+ .welcomePage{
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+
+ }
+.myLogIn {
+color: white;
+padding: 5px;
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+}
+
+
+.myLogIn .succes{
+color: rgb(79, 238, 79)
+
+
+}
+.myLogIn p{
+color: red;
+font-size: 1rem;
+
+
+
+}
+.myLogIn p{
+color: red;
+font-size: 1rem;
+
+
+
+}
+
+.myLogIn input{
+color: white !important;
+background-color: #24353f !important;
+
+
+}
+
+.SmartLogin{
+color: rgb(95, 95, 244);
+
+}
+
+
+.form-control:focus {
+
+box-shadow: none;
+
+
+}
+a{
+
+text-decoration: none;
+
+}
+
+
+.mynav{
+
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+color: white;
+}
+.mybtn{
+border: 2px rgb(129, 129, 45) solid;
+
+}
+.mybtn:hover {
+border: 2px rgb(129, 129, 45) solid;
+background-color:rgb(189, 189, 90) ;
+}
+
+.group {
+
+
+font-family: 'Titillium Web', sans-serif;;
+box-shadow: -5px 2px 54px -9px rgba(0, 0, 0, 1);
+color: white;
+font-size: 2.5rem;
+
+
+}

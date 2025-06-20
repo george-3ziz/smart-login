@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart LogIn</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+  <link rel="stylesheet" href="css/all.min.css" />
+
+  <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+
+  <div class="row">
+
+
+    <div id="logIn" class="  col-lg- col-md-6 mt-5 mx-auto myLogIn col-9 ">
+      <form class="w-75 text-center m-auto py-5">
+
+        <h3 class="SmartLogin ">Smart Login System</h3>
+        <div class="mb-3">
+
+          <input type="email" class="form-control my-3 pla   " placeholder="enter your email" id="exampleInputEmail1"
+            aria-describedby="emailHelp">
+         
+        </div>
+        <div class="mb-3">
+
+          <input type="password" class="form-control my-3 pla   " placeholder="enter your passoword"
+            id="exampleInputPassword1">
+       
+        </div>  
+ <p class="d-none   btnLoginInvalid  ">invalid userName or password ... Try Again</p>
+        <button class="btn btn-primary btnLogin">logIn</button>
+
+        <h6 class="fs-6 fa-web-awesome my-2">you don't have acount ?
+          <button class="text-white signedSucsses border-0 bg-transparent"> signUp </button>
+        </h6>
+      </form>
+
+
+    </div>
+  </div>
+
+  <div class="row">
+    <div id="signUp" class="col-lg- d-none  col-9  col-md-6 mt-5 mx-auto myLogIn ">
+      <form class="w-75 text-center m-auto py-5">
+        <h3 class="SmartLogin ">Smart SignUp System</h3>
+        <div class="mb-3">
+
+          <input type="text" class="form-control my-3 pla   " placeholder="enter your name" id="userName">
+          <p class="d-none validName  ">please Enter valid Name</p>
+        </div>
+        <div class="mb-3">
+
+          <input type="email" class="form-control my-3 pla   " placeholder="enter your email" id="InputEmail1"
+            aria-describedby="emailHelp">
+          <p class="d-none  validEmail ">please Enter valid email</p>
+        </div>
+        <div class="mb-3">
+
+          <input type="password" class="form-control my-3 pla   " placeholder="enter your passoword"
+            id="InputPassword1">
+          <p class="d-none  validPassword ">please Enter valid password</p>
+
+        </div>
+        <h6 id="succes" class="h6 fs-6 succes d-none "> succes </h6>
+        <h6 id="used" class="h6 fs-6 succes d-none text-warning-emphasis "> user Name or email alredy used .. try again
+        </h6>
+        <h6 id="required" class="h6 fs-6 succes d-none text-danger "> All Inputs Is Required </h6>
+
+        <button id="validateBtn" class="btn btn-warning">Sign Up</button>
+        <h6 class="fs-6 fa-web-awesome my-2">already have acount <button
+            class="text-white haveAcount border-0 bg-transparent"> LogIn</button>
+
+      </form>
+
+
+    </div>
+
+
+
+  </div>
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+
+</html>

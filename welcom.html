@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Smart LogIn</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+
+    <link rel="stylesheet" href="css/all.min.css" />
+
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body>
+
+    <nav class="navbar mynav   navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand text-white fw-bold fs-4 " href="#">Smart LogIn</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <button class="mybtn btn  p-2 mx-2">  Logout </button>
+        </div>
+    </nav>
+
+
+<div class="container my-5 text-center h-100  d-flex align-items-center " >
+
+<div class="group m-auto w-75 p-5 mt-5 " >
+
+<h1   id="username" > welcome  <span id="usernamewelcome" ></span> </h1>
+
+
+</div>
+
+</div>
+<script>
+window.onload = function () {
+  var users = JSON.parse(localStorage.getItem("users")) || [];
+
+  var email = localStorage.getItem("loggedInEmail");
+  var password = localStorage.getItem("loggedInPassword");
+
+  var matchedUser = users.find(function (user) {
+    return user.email === email && user.password === password;
+  });
+
+  if (matchedUser) {
+    document.getElementById("usernamewelcome").textContent = matchedUser.name;
+  } else {
+    // لو مفيش مستخدم مطابق، رجعه لصفحة الدخول
+    window.location.href = "index.html";
+  }
+};
+
+
+</script>
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
